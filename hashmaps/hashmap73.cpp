@@ -15,6 +15,7 @@ public:
         vector<pair<int, int>> zeros;
         int m = matrix.size();
         int n = matrix[0].size();
+        // 遍历矩阵，将0的位置存入zeros
         for (int i = 0; i < m; i++)
         {
             for (int j = 0; j < n; j++)
@@ -25,6 +26,7 @@ public:
                 }
             }
         }
+        // 遍历zeros，将对应的行和列置为0
         for (const auto &zero : zeros)
         {
             for (int i = 0; i < m; i++)
